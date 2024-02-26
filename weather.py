@@ -5,7 +5,7 @@ import time
 import requests
 
 def install(package): #copied a script or function intall the Import request
-    subprocess.check_call([sys.executable,"-m", "pip", "install", package])
+    subprocess.check_call(["sudo", sys.executable,"-m", "pip", "install", package])
 
 try:
     import requests
